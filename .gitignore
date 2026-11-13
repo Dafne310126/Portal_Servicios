@@ -1,0 +1,15 @@
+
+# Entorno virtual
+.venv/
+venv/
+
+# Archivos de Python
+__pycache__/
+*.pyc
+
+# Archivos privados
+.env
+
+# Archivos temporales
+.pytest_cache/
+instance/
