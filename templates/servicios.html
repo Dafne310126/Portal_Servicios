@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}Servicios - Portal de Servicios{% endblock %}
+
+{% block content %}
+<h2 class="fw-bold mb-4">Nuestros Servicios</h2>
+<div class="row g-4">
+    <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+            <img src="{{ url_for('static', filename='img/banner1.jpg') }}" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Cotizaciones">
+            <div class="card-body">
+                <h5 class="card-title">Gestión de Compras</h5>
+                <p class="card-text">Cálculo automatizado de pedidos con validación de descuentos institucionales para compras mayores a $1,000.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+            <img src="{{ url_for('static', filename='img/banner2.jpg') }}" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Nómina">
+            <div class="card-body">
+                <h5 class="card-title">Cálculo de Nómina</h5>
+                <p class="card-text">Estimación semanal transparente de jornadas ordinarias y horas extraordinarias para el personal operativo.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+            <img src="{{ url_for('static', filename='img/banner3.jpg') }}" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Metrología">
+            <div class="card-body">
+                <h5 class="card-title">Conversión Térmica</h5>
+                <p class="card-text">Estandarización de lecturas de temperatura entre sistemas métrico, imperial y absoluto para control de calidad.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
